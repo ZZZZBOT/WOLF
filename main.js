@@ -42,16 +42,16 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
     const starts = async (bosco = new WAConnection()) => {
     bosco.version = [3,3234,9]
 	bosco.logger.level = 'warn'
-	console.log(color(figlet.textSync('JINN  SER  OFC', {
+	console.log(color(figlet.textSync('ZED OFR', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: false
 	}), 'yellow'))
-	console.log(color('[JINN]', 'cyan'), color('WELCOME', 'white'))
-	console.log(color('[SER]', 'cyan'), color('BOT RUNNING', 'yellow'))
-	bosco.browserDescription = ["JINN SER OFC - [JINN-SER]", "edge", "3.0.0"];
+	console.log(color('[ZED]', 'cyan'), color('WELCOME', 'white'))
+	console.log(color('[IM]', 'cyan'), color('BOT RUNNING', 'yellow'))
+	bosco.browserDescription = ["[ZED OFR]", "edge", "3.0.0"];
 
 	// Menunggu QR
 	bosco.on('qr', () => {
@@ -121,7 +121,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			let buff = await getBuffer(ppimg)
 			const bosco1 = await bosco.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
 			const bosco2 = bosco1.message["ephemeralMessage"] ? bosco1.message.ephemeralMessage : bosco1
-			teks = `*𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚠 𝚊𝚗 𝙰𝚍𝚖𝚒𝚗*
+			teks = `*𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚠 𝚊𝚗 𝙰𝚍𝚖𝚒𝚗🦊*
  @${num.split('@')[0]}
 `
 			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 𝐁𝐫𝐮𝐡..!'},type:1}]
