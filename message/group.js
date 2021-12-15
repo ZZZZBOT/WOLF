@@ -26,7 +26,7 @@ module.exports = welcome = async (bosco, anu) => {
                 try {
                 pp_grup = await bosco.getProfilePicture(anu.jid)
                 } catch (e) {
-                pp_grup = 'https://i.postimg.cc/SN54m6LW/SAVE-20210728-133334.jpg'
+                pp_grup = 'https://i.postimg.cc/zDyg1frj/Nakano.png'
             }
             hehe = await getBuffer(pp_user)
             if (anu.action == 'add' && mem.includes(bosco.user.jid)) {
@@ -44,7 +44,7 @@ module.exports = welcome = async (bosco, anu) => {
                 anu_user = v.vname || v.notify || num.split('@')[0]
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
-                teks = `🎎⃢🌺 *𝑯𝒆𝒚 𝑩𝒓𝒐* @${num.split('@')[0]}\n🎎⃢🌺 *𝑩𝒊𝒐* : *${thu.status}*\n🎎⃢🌺 *𝑴𝒆𝒎𝒃𝒆𝒓𝒔* : ${memeg}*\n🎎⃢🌺 *𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐* \n *${mdata.subject}*\n🎎⃢🌺 *𝑹𝒆𝒂𝒅 𝑭𝒖𝒍𝒍 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏* \n ${time_wel} -  ${time_welc}`
+                teks = `🦊 *𝑯𝒆𝒚 𝑩𝒓𝒐* @${num.split('@')[0]}\n🦊 *𝑩𝒊𝒐* : *${thu.status}*\n🦊 *𝑴𝒆𝒎𝒃𝒆𝒓𝒔* : ${memeg}*\n🦊 *𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐* \n *${mdata.subject}*\n🎎⃢🌺 *𝑹𝒆𝒂𝒅 𝑭𝒖𝒍𝒍 𝑫𝒆𝒔𝒄𝒓𝒊𝒑𝒕𝒊𝒐𝒏* \n ${time_wel} -  ${time_welc}`
                 welcomeBut = [{buttonId:`${prefix}getdeskgc`,buttonText:{displayText:'𝐃𝐄𝐒𝐂𝐑𝐄𝐏𝐓𝐈𝐎𝐍'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'𝐒𝐂'},type:1}]
                 welcomeButt = { contentText: ` `, footerText: `${teks}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 bosco.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
@@ -59,7 +59,7 @@ module.exports = welcome = async (bosco, anu) => {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `🎭⃢🌹 *𝑮𝒐𝒐𝒅𝒃𝒚𝒆 𝑩𝒓𝒐* \n@${num.split('@')[0]}\n🎭⃢🌹 *𝑹𝒆𝒔𝒕 𝑰𝒏 𝑷𝒆𝒂𝒄𝒆* \n${time_wel} -  ${time_welc}`
+                out = `🦊 *𝑮𝒐𝒐𝒅𝒃𝒚𝒆 𝑩𝒓𝒐* \n@${num.split('@')[0]}\n🦊 *𝑹𝒆𝒔𝒕 𝑰𝒏 𝑷𝒆𝒂𝒄𝒆* \n${time_wel} -  ${time_welc}`
                 goodbyeBut = [{buttonId:`${prefix}h`,buttonText:{displayText:'𝐆𝐄𝐓 𝐎𝐔𝐓'},type:1}, {buttonId:`${prefix}sc`,buttonText:{displayText:'𝐒𝐂'}, type:1}]
                 goodbyeButt = { contentText: ` `, footerText: `${out}`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 bosco.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
