@@ -30,7 +30,7 @@ module.exports = welcome = async (bosco, anu) => {
             }
             hehe = await getBuffer(pp_user)
             if (anu.action == 'add' && mem.includes(bosco.user.jid)) {
-            bosco.sendMessage(anu.jid, `ʜᴇʏ ɢᴜʏs ɪᴍ ᴀ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ʙʏ ꪶ𝐽𝐼𝑁𝑁͢ 𝑆𝐸𝑅ꫂ⁩ ᴛʏᴘᴇ ${prefix}menu`, 'conversation')
+            bosco.sendMessage(anu.jid, `ʜᴇʏ ɢᴜʏs ɪᴍ ᴀ ᴡʜᴀᴛsᴀᴘᴘ ʙᴏᴛ ʙʏ ᴢᴇᴅ(ɪᴍᴀꜱʜ) ᴛʏᴘᴇ ${prefix}menu`, 'conversation')
             }
              if (anu.action == 'add' && !mem.includes(bosco.user.jid)) {
              const mdata = await bosco.groupMetadata(anu.jid)
