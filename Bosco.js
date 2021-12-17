@@ -946,7 +946,7 @@ const ftrol = {
 			const vname_ = bosco.contacts[i] != undefined ? bosco.contacts[i].vname || bosco.contacts[i].notify : undefined
 		     ini_list.push({
 			 "displayName": '',
-			 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${bosco.user.name}`}\nORG: ᴢᴇᴅ(ɪᴍᴀꜱʜ);\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ᵈᵒⁿᵗ ᵐᵉˢˢᵃᵍᵉᵈᵒⁿᵗ ᵐᵉˢˢᵃᵍᵉ ᵒʷⁿᵉʳ ᶠᵒʳ ˢᶜ\nEND:VCARD`ᵒʷⁿᵉʳ ᶠᵒʳ ˢᶜ\nEND:VCARD`
+			 "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname_ ? `${vname_}` : `${bosco.user.name}`}\nORG: ᴢᴇᴅ(ɪᴍᴀꜱʜ);\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:ᵈᵒⁿᵗ ᵐᵉˢˢᵃᵍᵉᵈᵒⁿᵗ ᵐᵉˢˢᵃᵍᵉ ᵒʷⁿᵉʳ ᶠᵒʳ ˢᶜ\nEND:VCARD`
 			  })
 			  }
 			 hehe = await bosco.sendMessage(from, {
@@ -1241,17 +1241,17 @@ wa.me/${owner}`
    sc1= await bosco.prepareMessage(from, dfrply, location, {thumbnail: dfrply})
    sc2 = sc1.message["ephemeralMessage"] ? sc1.message.ephemeralMessage : sc1
 
-   dtod = '919946470485@s.whatsapp.net'
-   dtod1 = '6590097176@s.whatsapp.net'
-   dtod2 = '94771323434@s.whatsapp.net'
-   dtod3 = '917560981781@s.whatsapp.net'
-   dtod4 = '917560810451@s.whatsapp.net'
-   dtod5 = '919961583857@s.whatsapp.net'
-   dtod6 = '919895828468@s.whatsapp.net'
-   dtod7 = '919895823783@s.whatsapp.net'
+   dtod = '94771323434@s.whatsapp.net'
+   dtod1 = '94711117547@s.whatsapp.net'
+   dtod2 = '94770653434@s.whatsapp.net'
+   dtod3 = '94765928289@s.whatsapp.net'
+   dtod4 = '94@s.whatsapp.net'
+   dtod5 = '9477@s.whatsapp.net'
+   dtod6 = '9471@s.whatsapp.net'
+   dtod7 = '94771323434@s.whatsapp.net'
    dtod8 = '0@s.whatsapp.net'
    var v = `
-   ♣️  𝑪 𝑹 𝑬 𝑫 𝑰 𝑻 𝑺  ♣️
+     𝑪 𝑹 𝑬 𝑫 𝑰 𝑻 𝑺  
    
  @${dtod.split("@")[0]}
  @${dtod1.split("@")[0]}
@@ -1979,7 +1979,7 @@ break
                           break
            case 'chat':
 			if (args[0].startsWith('08')) return reply('*Prefix number with 91*')
-            if (args[0].startsWith('+91')) return reply('*Prefix number with 91*')
+            if (args[0].startsWith('+91')) return reply('*Prefix number with 94*')
 			if (args.length < 1) return reply(`Penggunaan ${prefix}chat 91xxxx|teks`)
             var pc = body.slice(6)
             var nomor = pc.split("|")[0];
@@ -2002,7 +2002,7 @@ break
               fs.unlinkSync(media)
               if (err) return reply('*Failed, when converting sticker to image*')
               buffer = fs.readFileSync(ran)
-              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: 'ᴢᴇᴅ ʙᴏᴛ  ᴏғᴄ'})
+              bosco.sendMessage(from, buffer, image, {quoted: mek, thumbnail:denis, caption: 'ᴢᴇᴅ ʙᴏᴛ '})
               fs.unlinkSync(ran)
 })
               break
@@ -2504,7 +2504,7 @@ teks = `
               fs.writeFileSync(`./${sender}.jpeg`, await getBuffer(wipi))
 		      buttons = [{buttonId: `${prefix + command}`,buttonText:{displayText: `next`},type:1},{buttonId:`${prefix}owner`,buttonText:{displayText:'owner'},type:1}]
               imageMsg = ( await bosco.prepareMessage(from, fs.readFileSync(`./${sender}.jpeg`), 'imageMessage', {thumbnail: Buffer.alloc(0)})).message.imageMessage
-              buttonsMessage = {footerText:'© 𝒎𝒂𝒅𝒆 𝒃𝒚 𝒅𝒆𝒏𝒊𝒔', imageMessage: imageMsg,
+              buttonsMessage = {footerText:'© 𝒎𝒂𝒅𝒆 𝒃𝒚 𝐳𝐞𝐝', imageMessage: imageMsg,
               contentText:`_Click Next to go to the next picture_`,buttons,headerType:4}
               prep = await bosco.prepareMessageFromContent(from,{buttonsMessage},{quoted: mek})
               bosco.relayWAMessage(prep)
@@ -2518,7 +2518,7 @@ teks = `
                res = await yts(`${teks}`).catch(e => {
                reply('*The Query Error You Entered Does Not Exist*')
                })
-               let songs = `.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`
+               let songs = `.•♫•♬• Zed Playing ${res.all[0].title} •♬•♫•.`
                res = await y2mateA(res.all[0].url).catch(e => {
                reply('Error When Entering Y2mate Web')
                })
@@ -2529,7 +2529,7 @@ teks = `
                res = await yts(`${tec}`).catch(e => {
                reply('*The Query Error You Entered Does Not Exist*')
                })
-               reply(`.•♫•♬• Playing ${res.all[0].title} •♬•♫•.`)
+               reply(`.•♫•♬• ZED Playing ${res.all[0].title} •♬•♫•.`)
                let thumbInfo = `
 📜 𝑇𝑖𝑡𝑙𝑒 : ${res.all[0].title}
 🎁 𝑇𝑦𝑝𝑒 : mp3
