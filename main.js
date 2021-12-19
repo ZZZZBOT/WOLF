@@ -116,7 +116,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			try {
 					ppimg = await bosco.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = 'https://www.linkpicture.com/q/IMG-20211219-WA0003_2.jpg'
 				}
 			let buff = await getBuffer(ppimg)
 			const bosco1 = await bosco.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
@@ -124,7 +124,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			teks = `*𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘𝚠 𝚊𝚗 𝙰𝚍𝚖𝚒𝚗🦊*
  @${num.split('@')[0]}
 `
-			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'𝐂𝐨𝐧𝐠𝐫𝐚𝐭𝐬 𝐁𝐫𝐮𝐡..!'},type:1}]
+			promoteBut = [{buttonId:`hm`,buttonText:{displayText:'සුභපැතුම් බොක්ක'},type:1}]
             promoteButt = { contentText: `${teks}`, footerText: `ℙ𝕣𝕠𝕞𝕠𝕥𝕖 𝔻𝕖𝕔𝕥𝕖𝕔𝕥𝕖𝕕`, buttons: promoteBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
             bosco.sendMessage(mdata.id, promoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    } else if (anu.action == 'demote') {
@@ -133,7 +133,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			try {
 					ppimg = await bosco.getProfilePicture(`${anu.participants[0].split('@')[0]}@c.us`)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = 'https://www.linkpicture.com/q/IMG-20211219-WA0003_2.jpg'
 				}
 			let buff = await getBuffer(ppimg)
 			const bosco3= await bosco.prepareMessage("0@s.whatsapp.net", buff, MessageType.location,{ thumbnail: buff})
@@ -141,7 +141,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 			teks = `*𝚈𝚘𝚞 𝚊𝚛𝚎 𝚗𝚘 𝚕𝚘𝚗𝚐𝚎𝚛 𝚊𝚗 𝙰𝚍𝚖𝚒𝚗*
  @${num.split('@')[0]}
 `
-			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'𝐁𝐞𝐭𝐭𝐞𝐫 𝐋𝐮𝐜𝐤 𝐍𝐞𝐱𝐭 𝐓𝐢𝐦𝐞'},type:1}]
+			demoteBut = [{buttonId:`hm`,buttonText:{displayText:'අඩෝ උඹේ ඇඩ්මින් අයින් උන එකට මටත් අවුල්'},type:1}]
             demoteButt = { contentText: `${teks}`, footerText: `𝔻𝕖𝕞𝕠𝕥𝕖 𝔻𝕖𝕔𝕥𝕖𝕔𝕥𝕖𝕕`, buttons: demoteBut, headerType: 6, locationMessage: bosco4.message.locationMessage}
             bosco.sendMessage(mdata.id, demoteButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
 		    }
@@ -152,7 +152,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 
     bosco.on('group-update', async (anu) => {
     falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
-   remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Alphabot", "caption": `☠️ 𝑱 𝑰 𝑵 𝑵 - 𝑺 𝑬 𝑹 ☠️`, 'jpegThumbnail': fs.readFileSync(`ds.jpg`)}}}
+   remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "𝐙𝐄𝐃𝐅𝐑𝐃", "caption": `🄸🄼🄰🅂🄷`, 'jpegThumbnail': fs.readFileSync(`ds.jpg`)}}}
     metdata = await bosco.groupMetadata(anu.jid)
     if(anu.announce == 'false'){
     teks = `*[ 𝑮𝑹𝑶𝑼𝑷 𝑶𝑷𝑬𝑵𝑬𝑫 ]*\n`
