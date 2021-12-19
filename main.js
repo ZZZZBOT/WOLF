@@ -51,7 +51,7 @@ nocache('../message/help.js', module => console.log(color('[WATCH]', 'cyan'), co
 	}), 'yellow'))
 	console.log(color('[ZED]', 'cyan'), color('WELCOME', 'white'))
 	console.log(color('[IM]', 'cyan'), color('BOT RUNNING', 'yellow'))
-	bosco.browserDescription = ["[ZED OFR]", "edge", "3.0.0"];
+	bosco.browserDescription = ["ZED-CONNECTED", "edge", "3.0.0"];
 
 	// Menunggu QR
 	bosco.on('qr', () => {
